@@ -38,7 +38,15 @@ This repository contains over 100+ interview questions for Large Language Models
 ## Prompt Engineering & Basics of LLM
 
 - **What is the difference between Predictive/Discriminative AI and Generative AI?**
+Discriminative AI is a judge, it's designed mainly for classification and prediction. While generative AI is a creator, it's designed for create new content that resembles the data they were trained on. for example, when you give an image of dog to the disciminative model trained on the animal datasets, it will tell you whether the image is a dog. while the generative model will generate a new image of dog based on the input image.
+
 - **What is LLM, and how are LLMs trained?**
+LLM, w.r.t Large language model, is an AI model that can understand and generate human-like texts. It's called "large" because the datasets it's trained is very "large" , and also size of the model's parameters is very large.
+LLMs are often trained with three stages:
+1. Pre-training for the foundation model: in this stage, we feed the model with vast amount of unlabeled datasets, and the model learns by performing self-supervised tasks such as predicting a masked word in a sentence or generate next word in a sequence. 
+2. Fine-tuning (SFT) for instruction following: this is a supervised learning task. in this phase, the model is trained on a smaller and curated datsets of high-quality examples such as human-crafted Q&A pairs. This process teaches the model to follow the commands and align its output with human intentions.
+3. RLHF for alignment : in this stage we use a "reward model" to give a score to the LLM's output and make the model more aligned with human preference.this process often helps to reduce the generation of biased, toxic, unhelpful content.  
+
 - **What is a token in the language model?**
 - **How to estimate the cost of running SaaS-based and Open Source LLM models?**
 - **Explain the Temperature parameter and how to set it.**
