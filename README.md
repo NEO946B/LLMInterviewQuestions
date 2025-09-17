@@ -48,7 +48,12 @@ LLMs are often trained with three stages:
 3. RLHF for alignment : in this stage we use a "reward model" to give a score to the LLM's output and make the model more aligned with human preference.this process often helps to reduce the generation of biased, toxic, unhelpful content.  
 
 - **What is a token in the language model?**
+token is the fundamental unit of text that a language model uses for processing. It's a numerical format of text that the model can understand.
+
 - **How to estimate the cost of running SaaS-based and Open Source LLM models?**
+If you use Saas-based LLM models, you should know the pricing strategy, which is token-based pricing, request-based pricing or subscription tiers. So you can estimate the cost by estimate your average token counts or request count.
+While to use an open source LLM model, the most thing to take into account is the hardware cost, it's determined by you purchase your own gpu devices or use the cloud providers. and also the human cost to deploy and maintain the api service should also take into account.
+
 - **Explain the Temperature parameter and how to set it.**
 - **What are different decoding strategies for picking output tokens?**
 - **What are different ways you can define stopping criteria in large language model?**
