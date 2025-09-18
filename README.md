@@ -55,6 +55,8 @@ If you use Saas-based LLM models, you should know the pricing strategy, which is
 While to use an open source LLM model, the most thing to take into account is the hardware cost, it's determined by you purchase your own gpu devices or use the cloud providers. and also the human cost to deploy and maintain the api service should also take into account.
 
 - **Explain the Temperature parameter and how to set it.**
+temperature controls the randomness of the model's ouput, high temperature leads to high randomness and maybe more creative output, low temperature leads to more deterministic and predictable outputs. The optimal temperature value depends on your specific use case. for factual and structured tasks , such as data extraction, summarization or answer questions with right answers exists, set low temperature (0.1-0.3) to minimize the risk of "hallucination". while for general-purposed conversation, ser a moderate temperature (0.5 to 0.7) is a good choice, which banlances the coherence and variety, making the conversation more natural. For creativity tasks such as writing a story or brainstorm ideas, use a higher temperature (0.8-1.0) to encourage the model to be more exploratory.
+
 - **What are different decoding strategies for picking output tokens?**
 - **What are different ways you can define stopping criteria in large language model?**
 - **How to use stop sequences in LLMs?**
